@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></Samuel></title>
+    <link rel="stylesheet" href="../assets/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <main>
+        <header>
+            <div class="fondo"></div>
+            <h1>Samuel Medardo Hernández Ortiz</h1>
+            <h3>Front-end Web Developer</h3>
+            <div class="foto">
+                <img src="../assets/yo.png" alt="foto de perfil">
+            </div>
+        </header>
+        <section class="izquierda">
+            <h2>Acerca de mí</h2>
+            <p>Ingeniero mecánico, estudiante de Tecnología en Análisis y Desarrollo de Software, además del Bootcamp FullStack JavaScript ofrecido por Enyoi. Cuento con un sólido pensamiento lógico y facilidad para el aprendizaje. Estoy interesado en oportunidades que me permitan aplicar y adquirir experiencia en lenguajes de programación como JavaScript y Java, así como en el manejo de la biblioteca React, CSS y HTML. Disfruto colaborar con otros profesionales y deseo integrarme a un entorno de desarrollo para aplicar los conocimientos adquiridos, brindar soluciones efectivas, continuar aprendiendo y contribuir al avance tecnológico y a la innovación junto a la empresa y compañeros de trabajo.</p>
+            <h2>Metas</h2>
+            <p>
+                Mis metas personales y profesionales se centran en el crecimiento continuo en el desarrollo de software. Busco ampliar mis conocimientos en tecnologías, perfeccionando mis habilidades en programación y herramientas esenciales. Quiero ganar experiencia laboral significativa para aplicar estos conocimientos en entornos reales, resolver problemas complejos y contribuir al éxito de los proyectos.
+            </p>
+            <p>
+                Además, aspiro a crecer como persona, desarrollando habilidades de liderazgo y trabajo en equipo, y a guiar a otros con mi experiencia, proporcionando apoyo y mentoring. Deseo ser un ejemplo de vida, demostrando que con dedicación y esfuerzo, es posible alcanzar cualquier meta. También quiero contribuir a una comunidad profesional inclusiva, participando en iniciativas que promuevan el acceso a la educación y la tecnología. Mis objetivos buscan equilibrar el éxito profesional, el crecimiento personal y la contribución positiva a la sociedad.
+            </p>
+        </section>       
+        <section class="derecha">
+            <h2>Detalles</h2>
+            <div class="cajas">
+                <span class="material-symbols-outlined">
+                    celebration
+                </span>
+                <h3>Edad:</h3>
+            </div>
+            <h4>31 años</h4>
+            <div class="cajas">
+                <span class="material-symbols-outlined">
+                    my_location
+                </span>
+                <h3>Ubicación:</h3>
+            </div>
+            <h4>Barranquilla, Atlántico, Colombia</h4>
+            <div class="cajas">
+                <span class="material-symbols-outlined">
+                    mail
+                </span>
+                <h3>Email:</h3>
+            </div>
+            <h4>samuelhernandezo@outlook.com</h4>
+            <div class="cajas">
+                <span class="material-symbols-outlined">
+                    call
+                </span>
+                <h3>Cel:</h3>
+            </div>
+            <h4>+57 305 868 1785</h4>
+            <h2 class="h2deproyecto">Proyectos</h2>
+            <div class="content-card">                
+                <div class="card">
+                    <a target="_blank" href="https://elegant-piroshki-4c34d5.netlify.app/">
+                        <img src="../assets/Rick & Morty.png" alt="imagen Rick & Morty">
+                    </a>
+                    Rick & Morty
+                </div>
+                <div class="card">
+                    <a target="_blank" href="https://lustrous-travesseiro-35048e.netlify.app/">
+                        <img src="../assets/guia.png" alt="imagen pagina de guia para ser un desarrollador de software">
+                    </a>
+                    Conviertete en un desarrollador de software
+                </div>
+                <div class="card" target="_blank" href="https://aesthetic-dieffenbachia-c423bf.netlify.app/">
+                        <a target="_blank" href="https://aesthetic-dieffenbachia-c423bf.netlify.app/">
+                            <img src="../assets/formato.png" alt="imagen proyecto formulario">
+                        </a>
+                    Formato de recepción arroz paddy
+                </div>
+                <div class="card">
+                    Proximamente más proyectos...
+                </div>
+            </div>            
+        </section>
+        <audio id="audioPlayer" controls autoplay>
+            <source src="/I Have Done a Terrible Thing.mp3" type="audio/mpeg">
+        </audio>
+        <footer>
+            <div>
+                <a href="https://github.com/samuelk14"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github" width="50"></a>
+                <a href="https://www.linkedin.com/in/samuel-medardo-hernandez-ortiz/"><img src="https://static.vecteezy.com/system/resources/previews/016/716/470/non_2x/linkedin-icon-free-png.png" alt="linkedin" width="50"></a>
+            </div>
+        </footer>  
+        <script>
+            function enableAudio() {
+                var audio = document.getElementById('audioPlayer');
+                audio.play().then(() => {
+                    console.log('Reproducción iniciada.');
+                    removeEventListeners();
+                }).catch(error => {
+                    console.log('Error al reproducir el audio:', error);
+                });
+            }
+
+            function addEventListeners() {
+                document.addEventListener('click', enableAudio);
+                document.addEventListener('keydown', enableAudio);
+                document.addEventListener('touchstart', enableAudio);
+                document.addEventListener('scroll', enableAudio);
+            }
+
+            function removeEventListeners() {
+                document.removeEventListener('click', enableAudio);
+                document.removeEventListener('keydown', enableAudio);
+                document.removeEventListener('touchstart', enableAudio);
+                document.removeEventListener('scroll', enableAudio);
+            }
+
+            window.addEventListener('load', addEventListeners);
+        </script>      
+    </main>
+</body>
+</html>
